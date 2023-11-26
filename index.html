@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RESPONSIVE NAVBAR</title>
+</head>
+<body>
+    <nav class="nav__container">
+
+        <ul class="nav__container-ul">
+
+            <li class="nav__li" id="hideOnMobile" ><a href="#">FreeCODE</a></li>
+            <li class="nav__li" id="hideOnMobile" ><a href="#">Home</a></li>
+            <li class="nav__li" id="hideOnMobile" ><a href="#">About me</a></li>
+            <li class="nav__li" id="hideOnMobile" ><a href="#">Projects</a></li>
+            <li class="nav__li" id="hideOnMobile" ><a href="#">Contact</a></li>
+            <li onclick=showSidebar() class="nav__li" id="menu-boton"><a href="#"><img src="images/back.png"></a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar() class="nav__li"><a href="#"><img src="images/close.png"></a></li>
+            <li class="nav__li"><a href="#">Home</a></li>
+            <li class="nav__li"><a href="#">About me</a></li>
+            <li class="nav__li"><a href="#">Projects</a></li>
+            <li class="nav__li"><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <script src="main.js" defer></script>
+    
+</body>
+</html>
